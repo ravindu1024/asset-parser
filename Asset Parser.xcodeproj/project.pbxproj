@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32F949EADA6A32D91F43B704 /* CommandLineUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F942D2193E1BD0DDA30982 /* CommandLineUtils.swift */; };
+		32F94EB65CE3F5E023297D15 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9479D2B9097C8864DAAF9 /* Parser.swift */; };
 		E47289DE241DD86700B815D7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47289DD241DD86700B815D7 /* main.swift */; };
+		E47289E5241DD8AD00B815D7 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47289E4241DD8AD00B815D7 /* FileUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E47289DA241DD86700B815D7 /* Asset Parser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Asset Parser"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F942D2193E1BD0DDA30982 /* CommandLineUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandLineUtils.swift; sourceTree = "<group>"; };
+		32F9479D2B9097C8864DAAF9 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		E47289DA241DD86700B815D7 /* parser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = parser; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47289DD241DD86700B815D7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E47289E4241DD8AD00B815D7 /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +55,7 @@
 		E47289DB241DD86700B815D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E47289DA241DD86700B815D7 /* Asset Parser */,
+				E47289DA241DD86700B815D7 /* parser */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				E47289DD241DD86700B815D7 /* main.swift */,
+				E47289E4241DD8AD00B815D7 /* FileUtils.swift */,
+				32F9479D2B9097C8864DAAF9 /* Parser.swift */,
+				32F942D2193E1BD0DDA30982 /* CommandLineUtils.swift */,
 			);
 			path = "Asset Parser";
 			sourceTree = "<group>";
@@ -79,7 +88,7 @@
 			);
 			name = "Asset Parser";
 			productName = "Asset Parser";
-			productReference = E47289DA241DD86700B815D7 /* Asset Parser */;
+			productReference = E47289DA241DD86700B815D7 /* parser */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -121,6 +130,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E47289DE241DD86700B815D7 /* main.swift in Sources */,
+				E47289E5241DD8AD00B815D7 /* FileUtils.swift in Sources */,
+				32F94EB65CE3F5E023297D15 /* Parser.swift in Sources */,
+				32F949EADA6A32D91F43B704 /* CommandLineUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +258,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHKA9N2L2J;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = parser;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -257,7 +269,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHKA9N2L2J;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = parser;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
